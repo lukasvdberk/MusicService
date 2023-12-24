@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     name: ComposeDeploy
     steps:
-      - uses: actions/checkout@1.0
+      - uses: actions/checkout@v4
       - id: ComposeDeploy
-        uses: lukasvdberk/compose-deploy-action@v4
+        uses: lukasvdberk/compose-deploy-action@1.0
         env:
           API_KEY: ${{ secrets.COMPOSE_DEPLOY_API_KEY }}
         with:
