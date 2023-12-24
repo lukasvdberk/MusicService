@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: ComposeDeploy
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@1.0
       - id: ComposeDeploy
         uses: lukasvdberk/compose-deploy-action@v4
         env:
