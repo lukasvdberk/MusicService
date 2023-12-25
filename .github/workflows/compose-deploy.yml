@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: ComposeDeploy
-        uses: lukasvdberk/compose-deploy-action@1.2
+        uses: lukasvdberk/compose-deploy-action@1.4
         env:
           API_KEY: ${{ secrets.COMPOSE_DEPLOY_API_KEY }}
         with:
